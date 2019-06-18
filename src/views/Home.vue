@@ -1,18 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>What's the weather like today?</h1>
+    <WeatherNow />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import WeatherNow from '@/components/weather-now.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    WeatherNow
   }
 }
 </script>
+
+<style>
+h1 {
+  margin-top: 5vh;
+  font-size: 38px;
+}
+</style>
+
